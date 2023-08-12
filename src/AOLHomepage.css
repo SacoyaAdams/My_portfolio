@@ -1,83 +1,89 @@
-/* AOLHomepage.css */
+/* Profile.css */
 
-.aol-homepage {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 100%; /* Take up the whole width of the laptop */
-    margin: 0; /* Remove margin */
-  }
-  
-  .aol-header {
-    display: flex; /* Use flex display for flexible alignment */
-    align-items: center; /* Vertically center the content */
-    padding: 8px;
-    background-color: teal;
-    color: white;
-    margin: 0; /* Remove margin */
-  }
-  
-  .aol-logo {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
-  }
-  .second-header {
-    background-color: rgb(231, 211, 186); /* Set the background color to yellow */
-    color: black; /* Set the text color to black for better contrast */
-    display: flex;
-    align-items: center;
-    padding: 8px;
-  }
-  
-  .second-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center; /* Align items to the left */
-  }
-  
-  .second-header li {
-    margin-right: 20px;
-    cursor: pointer;
-    color: black;
-  }
-  .aol-nav {
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .aol-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Add your styles for .colz, .profile-details, .profile-details-name, etc. here */
+
+/* Center everything horizontally and vertically */
+.profile-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
   }
   
-  .aol-nav li {
-    margin: 0 15px;
-    color: white;
-    cursor: pointer;
+  .primary-text {
+    font-size: 24px;
+    color: #333;
   }
   
-  .aol-content {
+  .highlighted-text {
+    color: #ff0066;
+  }
+  
+  .profile-details {
     padding: 20px;
-    background-color: white;
+    background-color: #f1f1f1;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
-  .aol-footer {
-    text-align: center;
-    margin-top: 20px;
+  .profile-details-name {
+    margin-bottom: 10px;
+  }
+  
+  .profile-details-role h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .profile-role-tagline {
+    font-size: 18px;
     color: #777;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .primary-btn {
+    background-color: #ff00f7;
+  }
+  
+  .highlighted-btn {
+    background-color: #ff006f;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: row-reverse; /* Change to row-reverse to place the picture on the right */
+    align-items: center;
+    margin-top: 20px; /* Add some margin between the content and the picture */
+  }
+  
+  .profile-options {
+    margin-top: 20px;
+  }
+  
+  .profile-picture {
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 280px; /* Adjust the height as needed */
+    width: 280px; /* Adjust the width as needed */
+    background-color: blue; /* Set a background color or background image here */
+    margin-left: 20px; /* Adjust the margin to position it on the right */
+  }
+  
+  .profile-picture-background {
+    height: 100%;
+    width: 100%;
+    background-image: url('C:/Users/SacoyaAdams/code/portfolio/src/assets/Home/Sacoya profile pic.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
   }
   
