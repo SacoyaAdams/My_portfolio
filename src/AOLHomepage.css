@@ -1,9 +1,10 @@
-
+/* Center everything horizontally and vertically */
 .profile-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 100%; /* Set the width to 100% of the viewport width */
   }
   
   .primary-text {
@@ -46,12 +47,22 @@
     color: white;
   }
   
-  .primary-btn {
-    background-color: #ff00f7;
-  }
+
   
   .highlighted-btn {
     background-color: #ff006f;
+  }
+  
+  .contact-btn {
+    background-color: #ff00c8; /* Customize the color for the Contact button */
+  }
+  
+  .projects-btn {
+    background-color: #ff006f; /* Customize the color for the Projects button */
+  }
+  
+  .blogs-btn {
+    background-color: #ff00c8; /* Customize the color for the Blogs button */
   }
   
   .profile-content {
@@ -61,50 +72,26 @@
     margin-top: 20px; /* Add some margin between the content and the picture */
   }
   
-  /* Add your styles for .colz, .profile-details, .profile-details-name, etc. here */
-
-/* Center everything horizontally and vertically */
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: 100vh; /* Set the height to 100% of the viewport height */
-}
-
-/* ... (rest of your CSS) */
-
-.profile-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1; /* Allow the profile content to take up remaining vertical space */
-}
-
-.profile-picture-container {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-}
-
-/* ... (previous CSS) */
-
-.profile-picture {
+  .profile-picture {
     box-shadow: 0 1px 0px 0px var(--white);
     border-radius: 50%;
     height: 400px; /* Increase the height */
     width: 400px; /* Increase the width */
     background-color: blue; /* Set a background color or background image here */
     margin-left: 30px; /* Adjust the margin to position it on the right */
-}
-
-.profile-picture-background {
+  }
+  
+  .profile-picture-background {
     height: 100%;
     width: 100%;
     background-image: url('C:/Users/SacoyaAdams/code/portfolio/src/assets/Home/Sacoya profile pic.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-}
-.profile-picture-background:hover{
+  }
+  
+  .profile-picture-background:hover {
     transform: scale(1.07);
-    transition: 1s ease-out
-}
+    transition: 1s ease-out;
+  }
+  
