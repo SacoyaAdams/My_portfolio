@@ -1,3 +1,5 @@
+/* AOLHomepage.css */
+
 .aol-homepage {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
@@ -5,31 +7,51 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%; /* Take up the whole width of the laptop */
+    margin: 0; /* Remove margin */
   }
-
-
-.aol-header {
+  
+  .aol-header {
+    display: flex; /* Use flex display for flexible alignment */
+    align-items: center; /* Vertically center the content */
+    padding: 8px;
     background-color: teal;
     color: white;
-    display: flex;  /* Use flex display for flexible alignment */
-    align-items: center;  /* Vertically center the content */
-    padding: 8px;  /* Adjust padding as needed */
+    margin: 0; /* Remove margin */
   }
   
   .aol-logo {
     width: 150px;
     height: auto;
-    margin-right: 20px;  /* Add some right margin for spacing */
+    margin-right: 20px;
+  }
+  .second-header {
+    background-color: rgb(231, 211, 186); /* Set the background color to yellow */
+    color: black; /* Set the text color to black for better contrast */
+    display: flex;
+    align-items: center;
+    padding: 8px;
   }
   
-
+  .second-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items to the left */
+  }
+  
+  .second-header li {
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+  }
   .aol-nav {
     background-color: #444;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .aol-nav ul {
