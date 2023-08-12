@@ -1,8 +1,4 @@
-/* Profile.css */
 
-/* Add your styles for .colz, .profile-details, .profile-details-name, etc. here */
-
-/* Center everything horizontally and vertically */
 .profile-container {
     display: flex;
     justify-content: center;
@@ -65,25 +61,50 @@
     margin-top: 20px; /* Add some margin between the content and the picture */
   }
   
-  .profile-options {
-    margin-top: 20px;
-  }
-  
-  .profile-picture {
+  /* Add your styles for .colz, .profile-details, .profile-details-name, etc. here */
+
+/* Center everything horizontally and vertically */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+/* ... (rest of your CSS) */
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Allow the profile content to take up remaining vertical space */
+}
+
+.profile-picture-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* ... (previous CSS) */
+
+.profile-picture {
     box-shadow: 0 1px 0px 0px var(--white);
     border-radius: 50%;
-    height: 280px; /* Adjust the height as needed */
-    width: 280px; /* Adjust the width as needed */
+    height: 400px; /* Increase the height */
+    width: 400px; /* Increase the width */
     background-color: blue; /* Set a background color or background image here */
-    margin-left: 20px; /* Adjust the margin to position it on the right */
-  }
-  
-  .profile-picture-background {
+    margin-left: 30px; /* Adjust the margin to position it on the right */
+}
+
+.profile-picture-background {
     height: 100%;
     width: 100%;
     background-image: url('C:/Users/SacoyaAdams/code/portfolio/src/assets/Home/Sacoya profile pic.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-  }
-  
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out
+}
