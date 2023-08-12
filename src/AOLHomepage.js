@@ -36,11 +36,11 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn contact-btn">Contact</button>
-            <button className="btn primary-btn projects-btn">Projects</button>
-            <button className="btn primary-btn blogs-btn">Blogs</button>
+            <button className="btn primary-btn contact-btn" style={{ backgroundColor: "#ff00c8" }}>Contact</button>
+            <button className="btn primary-btn projects-btn" style={{ backgroundColor: "#ff006f" }}>Projects</button>
+            <button className="btn primary-btn blogs-btn" style={{ backgroundColor: "#ff00c8" }}>Blogs</button>
             <a href="Sacoya adams.pdf" download>
-              <button className="btn highlighted-btn">Get Resume</button>
+              <button className="btn highlighted-btn" style={{ backgroundColor: "#ff006f" }}>Get Resume</button>
             </a>
           </div>
         </div>

@@ -1,12 +1,35 @@
-/* Center everything horizontally and vertically */
-.profile-container {
+  /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the background color for the entire page */
+  body {
+    background-color: #f8f8f8;
+    margin: 0; /* Remove default margin from body */
+  }
+  
+  /* Center everything horizontally and vertically */
+  .profile-container {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    height: 100vh; /* Set the height to 100% of the viewport height */
+    min-height: 100vh; /* Use min-height to ensure the container takes up at least the full viewport height */
     width: 100%; /* Set the width to 100% of the viewport width */
+    background-color: #f8f8f8; /* Set the background color for the container */
   }
   
+  /* Style the content and picture container */
+  .profile-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Make the content and picture container fill the width */
+    margin-top: 0; /* Remove top margin to align content at the top */
+  }
+  
+  /* Add your original styles here */
   .primary-text {
     font-size: 24px;
     color: #333;
@@ -22,38 +45,10 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    flex: 1; /* Allow the content to take up remaining horizontal space */
   }
   
-  .profile-details-name {
-    margin-bottom: 10px;
-  }
-  
-  .profile-details-role h1 {
-    font-size: 36px;
-    color: #333;
-  }
-  
-  .profile-role-tagline {
-    font-size: 18px;
-    color: #777;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-  }
-  
-
-  
-  .highlighted-btn {
-    background-color: #ff006f;
-  }
-  
-  .contact-btn {
+.contact-btn {
     background-color: #ff00c8; /* Customize the color for the Contact button */
   }
   
@@ -63,13 +58,6 @@
   
   .blogs-btn {
     background-color: #ff00c8; /* Customize the color for the Blogs button */
-  }
-  
-  .profile-content {
-    display: flex;
-    flex-direction: row-reverse; /* Change to row-reverse to place the picture on the right */
-    align-items: center;
-    margin-top: 20px; /* Add some margin between the content and the picture */
   }
   
   .profile-picture {
