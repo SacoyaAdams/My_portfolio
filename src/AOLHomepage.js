@@ -1,6 +1,9 @@
 import React from 'react';
 import Typical from 'react-typical';
-import './AOLHomepage.css'; // Make sure the CSS file path is correct
+import './AOLHomepage.css'; 
+import Body from './Body';
+
+
 
 export default function Profile() {
   return (
@@ -19,7 +22,7 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Creative Developer",
+                    "Innovative Developer",
                     2000, // Set the loop time to 2000 milliseconds
                     "Full Stack Developer",
                     2000,
@@ -36,11 +39,11 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn contact-btn" style={{ backgroundColor: "#ff00c8" }}>Contact</button>
-            <button className="btn primary-btn projects-btn" style={{ backgroundColor: "#ff006f" }}>Projects</button>
-            <button className="btn primary-btn blogs-btn" style={{ backgroundColor: "#ff00c8" }}>Blogs</button>
+            <button className="btn primary-btn contact-btn" style={{ backgroundColor: "brown" }}>Contact</button>
+            <button className="btn primary-btn projects-btn" style={{ backgroundColor: "tan" }}>Projects</button>
+            <button className="btn primary-btn blogs-btn" style={{ backgroundColor: "brown" }}>Blogs</button>
             <a href="Sacoya adams.pdf" download>
-              <button className="btn highlighted-btn" style={{ backgroundColor: "#ff006f" }}>Get Resume</button>
+              <button className="btn highlighted-btn" style={{ backgroundColor: "tan" }}>Get Resume</button>
             </a>
           </div>
         </div>
@@ -48,8 +51,13 @@ export default function Profile() {
       <div className="profile-picture-container">
         <div className="profile-picture">
           <div className="profile-picture-background"></div>
+          <div className="arrow-container">
+        <div className="arrow"></div>
+      </div>
         </div>
       </div>
+      <Body />
     </div>
+
   );
 }

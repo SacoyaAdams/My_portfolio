@@ -1,42 +1,44 @@
-  /* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(123, 203, 123);
   }
+
   
-  /* Set the background color for the entire page */
+ 
   body {
     background-color: #f8f8f8;
-    margin: 0; /* Remove default margin from body */
+    margin: 0; 
   }
-  
-  /* Center everything horizontally and vertically */
-  .profile-container {
+  /* AOLHomepage.css */
+
+.profile-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    min-height: 100vh; /* Use min-height to ensure the container takes up at least the full viewport height */
-    width: 100%; /* Set the width to 100% of the viewport width */
-    background-color: #f8f8f8; /* Set the background color for the container */
+    align-items: center;
+    min-height: 100vh;
   }
   
-  /* Style the content and picture container */
+
   .profile-content {
     display: flex;
     flex-direction: row;
-    width: 100%; /* Make the content and picture container fill the width */
-    margin-top: 0; /* Remove top margin to align content at the top */
+    width: 100%; 
+    margin-top: 0;
   }
   
-  /* Add your original styles here */
+
   .primary-text {
     font-size: 24px;
     color: #333;
   }
   
   .highlighted-text {
-    color: #ff0066;
+    color: brown;
+    
   }
   
   .profile-details {
@@ -45,28 +47,27 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    flex: 1; /* Allow the content to take up remaining horizontal space */
+    flex: 1; 
   }
   
-.contact-btn {
-    background-color: #ff00c8; /* Customize the color for the Contact button */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #ff00c8; 
+    transition: background-color 0.3s ease; 
   }
   
-  .projects-btn {
-    background-color: #ff006f; /* Customize the color for the Projects button */
-  }
-  
-  .blogs-btn {
-    background-color: #ff00c8; /* Customize the color for the Blogs button */
-  }
   
   .profile-picture {
     box-shadow: 0 1px 0px 0px var(--white);
     border-radius: 50%;
-    height: 400px; /* Increase the height */
-    width: 400px; /* Increase the width */
-    background-color: blue; /* Set a background color or background image here */
-    margin-left: 30px; /* Adjust the margin to position it on the right */
+    height: 400px; 
+    width: 400px;  
+    margin-left: 30px; 
   }
   
   .profile-picture-background {
@@ -82,4 +83,27 @@
     transform: scale(1.07);
     transition: 1s ease-out;
   }
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
   
+  .arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+    animation: arrowAnimation 1s infinite;
+  }
+  
+  @keyframes arrowAnimation {
+    0%, 100% {
+      transform: rotate(-45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(-45deg) translateY(10px);
+    }
+  }
